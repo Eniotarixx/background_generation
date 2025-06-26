@@ -2,3 +2,12 @@ model/*.pth
 *jpeg 
 *png
 *pt
+
+# Ignorer tous les dossiers __pycache__ partout dans le projet
+__pycache__/
+
+# Ignorer les fichiers .pyc et .pyo partout
+*.py[cod]
+
+__pycache__/
+*.py[cod]
