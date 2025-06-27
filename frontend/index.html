@@ -3,7 +3,22 @@
   <!-- Input pour caméra ou galerie -->
   <input type="file" accept="image/*" capture="user" id="cameraInput" />
 
-  <button onclick="upload()">Send</button>
+  <button onclick="upload()">Envoyer</button>
+  <button id="selfieBtn">Prendre un selfie</button>
+
+  <!-- Webcam preview and capture -->
+  <div id="webcamContainer" style="display:none;">
+    <video id="webcam" autoplay playsinline width="320" height="240"></video>
+    <br>
+    <button id="captureBtn">Capturer</button>
+  </div>
+
+  <!-- Canvas to hold the captured image (hidden) -->
+  <canvas id="selfieCanvas" width="320" height="240" style="display:none;"></canvas>
+
+  <div id="info" style="color: #007bff; margin-top: 1em;"></div>
 
   <h2>Résultat :</h2>
   <img id="result" style="max-width: 100%;"/>
+
+  <script src="/static/script.js"></script>
